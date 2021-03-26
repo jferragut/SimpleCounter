@@ -7,11 +7,11 @@ export const SimpleCounter = props => {
 	return (
 		<div className="counter">
 			<FontAwesomeIcon icon={faClock} />
-			<div className="digit">{props.five}</div>
-			<div className="digit">{props.four}</div>
-			<div className="digit">{props.three}</div>
-			<div className="digit">{props.two}</div>
-			<div className="digit">{props.one}</div>
+			<div className="digit">{props.five % 10}</div>
+			<div className="digit">{props.four % 10}</div>
+			<div className="digit">{props.three % 10}</div>
+			<div className="digit">{props.two % 10}</div>
+			<div className="digit">{props.one % 10}</div>
 		</div>
 	);
 };
